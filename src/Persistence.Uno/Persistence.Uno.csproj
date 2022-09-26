@@ -1,17 +1,17 @@
-﻿<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
+﻿<Project Sdk="MSBuild.Sdk.Extras/3.0.44">
   <PropertyGroup>
-		<!-- Change the TargetFrameworks depending on which platform you are building on. This avoids errors as it is impossible to build UAP on OSX (MacOS) -->
-		<TargetFrameworks Condition="'$([MSBuild]::IsOsPlatform(OSX))'">netstandard2.0;xamarinios10;net461</TargetFrameworks>
-		<TargetFrameworks Condition="'!$([MSBuild]::IsOsPlatform(OSX))'">netstandard2.0;xamarinios10;monoandroid10.0;monoandroid11.0;uap10.0.18362;net461</TargetFrameworks>
+	<!-- Change the TargetFrameworks depending on which platform you are building on. This avoids errors as it is impossible to build UAP on OSX (MacOS) -->
+	<TargetFrameworks Condition="'$([MSBuild]::IsOsPlatform(OSX))'">netstandard2.0;xamarinios10;net461</TargetFrameworks>
+	<TargetFrameworks Condition="'!$([MSBuild]::IsOsPlatform(OSX))'">netstandard2.0;xamarinios10;monoandroid10.0;monoandroid11.0;uap10.0.19041;net461</TargetFrameworks>
     <!-- Ensures the .xr.xml files are generated in a proper layout folder -->
     <GenerateLibraryLayout>true</GenerateLibraryLayout>
     <RootNamespace>Nventive.Persistence</RootNamespace>
-		<Authors>nventive</Authors>
-		<Company>nventive</Company>
-		<AssemblyName>Nventive.Persistence.Uno</AssemblyName>
-		<PackageId>Nventive.Persistence.Uno</PackageId>
-		<Description>Nventive.Persistence.Uno</Description>
-		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	<Authors>nventive</Authors>
+	<Company>nventive</Company>
+	<AssemblyName>Nventive.Persistence.Uno</AssemblyName>
+	<PackageId>Nventive.Persistence.Uno</PackageId>
+	<Description>Nventive.Persistence.Uno</Description>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(TargetFramework)'=='netstandard2.0'">
@@ -20,10 +20,13 @@
 
   <ItemGroup Condition="'$(TargetFramework)'=='xamarinios10' or '$(TargetFramework)'=='monoandroid10.0' or '$(TargetFramework)'=='monoandroid11.0' or '$(TargetFramework)'=='netstandard2.0'">
     <PackageReference Include="Uno.UI" Version="4.0.7" />
+	<PackageReference Include="Uno.SourceGenerationTasks" Version="4.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Persistence.Abstractions\Persistence.Abstractions.csproj" />
     <ProjectReference Include="..\Persistence\Persistence.csproj" />
   </ItemGroup>
+
+  <Import Project="..\Persistence.Shared\Persistence.Shared.projitems" Label="Shared" />
 </Project>

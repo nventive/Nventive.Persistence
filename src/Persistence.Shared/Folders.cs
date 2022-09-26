@@ -48,7 +48,7 @@ namespace Nventive.Persistence
 			return Foundation.NSBundle.MainBundle
 				.GetUrlForResource(Path.GetFileNameWithoutExtension(uri.LocalPath), Path.GetExtension(uri.LocalPath))
 				.AbsoluteString;
-#elif WINDOWS_UWP
+#elif WINDOWS_UWP || WINUI
 			var folder = Windows.ApplicationModel.Package.Current.InstalledLocation.Path;
 			return Path.Combine(folder, filename);
 #elif __WASM__
@@ -77,7 +77,7 @@ namespace Nventive.Persistence
 				folder = Path.GetFullPath(Path.Combine(documents, "..", "Library", "Caches"));
 				Directory.CreateDirectory(folder);
 			}
-#elif WINDOWS_UWP
+#elif WINDOWS_UWP || WINUI
 			var folder = Windows.Storage.ApplicationData.Current.LocalCacheFolder.Path;
 #else
 			var folder = Path.GetTempPath();
@@ -89,7 +89,7 @@ namespace Nventive.Persistence
 		{
 #if __ANDROID__ || __IOS__
 			var folder = Path.GetTempPath();
-#elif WINDOWS_UWP
+#elif WINDOWS_UWP || WINUI
 			var folder = Windows.Storage.ApplicationData.Current.TemporaryFolder.Path;
 #else
 			var folder = Path.GetTempPath();
@@ -105,7 +105,7 @@ namespace Nventive.Persistence
 			var documents = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 			var folder = Path.GetFullPath(Path.Combine(documents, "..", "Library", "Data"));
 			Directory.CreateDirectory(folder);
-#elif WINDOWS_UWP
+#elif WINDOWS_UWP || WINUI
 			var folder = Windows.Storage.ApplicationData.Current.LocalFolder.Path;
 #elif __WASM__
 			var folder = "/";
@@ -123,7 +123,7 @@ namespace Nventive.Persistence
 			var documents = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 			var folder = Path.GetFullPath(Path.Combine(documents, "..", "Library", "Data"));
 			Directory.CreateDirectory(folder);
-#elif WINDOWS_UWP
+#elif WINDOWS_UWP || WINUI
 			var folder = Windows.Storage.ApplicationData.Current.LocalCacheFolder.Path;
 #elif __WASM__
 			var folder = "/";
