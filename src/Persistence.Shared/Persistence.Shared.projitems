@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>eee401fc-b4eb-469f-8fd5-745dfb7639be</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Persistence.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ApplicationDataContainerSecureSettingsStorage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataPersisterExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Folders.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FolderType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)KeychainSettingsStorage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)KeyStoreSettingsStorage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PasswordVaultSettingsStorage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnoDataPersister.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnoDataReader.cs" />
+  </ItemGroup>
+</Project>
