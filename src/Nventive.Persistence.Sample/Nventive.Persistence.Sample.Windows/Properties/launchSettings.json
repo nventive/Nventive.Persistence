@@ -1,0 +1,10 @@
+{
+	"profiles": {
+		"Nventive.Persistence.Sample.Windows (Package)": {
+			"commandName": "MsixPackage"
+		},
+		"Nventive.Persistence.Sample.Windows (Unpackaged)": {
+			"commandName": "Project"
+		}
+	}
+}
