@@ -182,7 +182,7 @@ namespace Nventive.Persistence
 						throw new SecurityException(status);
 					}
 				}
-				else if (status == SecStatusCode.ItemNotFound)
+				else if (status == SecStatusCode.ItemNotFound || status == SecStatusCode.MissingEntitlement)
 				{
 					keys.Add(name);
 					record.ValueData = data;
