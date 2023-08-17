@@ -22,10 +22,12 @@ namespace Nventive.Persistence
 	{
 		private const string AllKeysAccountName = "Internal_AllKeys_Account";
 		private const string WasKeychainValidatedName = "Keychain_was_validated";
+		private const string DefaultKeychainService = "_KeychainSettingsStorage_";
 
 		private readonly ISettingsSerializer _serializer;
 
 		private readonly FastAsyncLock _clearKeychain = new FastAsyncLock();
+		private readonly string _keychainService;
 
 		/// <summary>
 		/// Creates a new <see cref="KeychainSettingsStorage"/>.
@@ -34,6 +36,18 @@ namespace Nventive.Persistence
 		public KeychainSettingsStorage(ISettingsSerializer serializer)
 		{
 			_serializer = serializer;
+			_keychainService = DefaultKeychainService;
+		}
+
+		/// <summary>
+		/// Creates a new <see cref="KeychainSettingsStorage"/>.
+		/// </summary>
+		/// <param name="serializer">A serializer for transforming values back and forth to strings.</param>
+		/// <param name="keychainService">Keychain service name.</param>
+		public KeychainSettingsStorage(ISettingsSerializer serializer, string keychainService)
+		{
+			_serializer = serializer;
+			_keychainService = keychainService;
 		}
 
 		/// <inheritdoc/>
@@ -245,7 +259,7 @@ namespace Nventive.Persistence
 			{
 				Account = name,
 				Label = name,
-				Service = "_KeychainSettingsStorage_"
+				Service = _keychainService
 			};
 		}
 
