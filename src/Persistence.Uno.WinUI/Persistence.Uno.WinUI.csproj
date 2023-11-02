@@ -13,7 +13,7 @@
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<PackageTags>persistence;mvvm;maui;winui;ios;android</PackageTags>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-		<PackageProjectUrl>https://github.com/nventive/Nventive.Persistence</PackageProjectUrl>		
+		<PackageProjectUrl>https://github.com/nventive/Nventive.Persistence</PackageProjectUrl>
 		<DefineConstants>$(DefineConstants);WINUI</DefineConstants>
 
 		<!-- Needed for Source Link support -->
@@ -44,16 +44,17 @@
 		<DefineConstants>$(DefineConstants);__WASM__</DefineConstants>
 	</PropertyGroup>
 
-	
+
 	<PropertyGroup Condition="'$(TargetFramework)'=='net6.0-android'">
 		<!-- Workaround: https://github.com/unoplatform/uno/issues/9723 -->
 		<_AndroidApiLevel>31</_AndroidApiLevel>
 	</PropertyGroup>
-	
+
 	<ItemGroup>
 		<ProjectReference Include="..\Persistence.Abstractions\Persistence.Abstractions.csproj" />
 		<ProjectReference Include="..\Persistence\Persistence.csproj" />
 	</ItemGroup>
-	
+
 	<Import Project="..\Persistence.Shared\Persistence.Shared.projitems" Label="Shared" />
+	<Import Project="winappsdk-workaround.targets" />
 </Project>
