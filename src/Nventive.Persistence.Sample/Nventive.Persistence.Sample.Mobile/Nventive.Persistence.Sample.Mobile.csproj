@@ -8,6 +8,10 @@
 		<SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net6.0-android'">26.0</SupportedOSPlatformVersion>
 		<DefineConstants>$(DefineConstants);WINUI</DefineConstants>
 	</PropertyGroup>
+	<PropertyGroup>
+		<!-- Needed to suppress warning about out of support workload, remove when updating to dotnet 7 -->
+		<CheckEolWorkloads>false</CheckEolWorkloads>
+	</PropertyGroup>
 	<PropertyGroup Condition="'$(RuntimeIdentifier)'==''">
 		<!-- Default values for command line builds -->
 		<RuntimeIdentifier Condition="'$(TargetFramework)' == 'net6.0-ios'">iossimulator-x64</RuntimeIdentifier>

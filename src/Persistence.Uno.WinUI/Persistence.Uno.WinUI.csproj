@@ -23,6 +23,11 @@
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<!-- Needed to suppress warning about out of support workload, remove when updating to dotnet 7 -->
+		<CheckEolWorkloads>false</CheckEolWorkloads>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<PackageReference Include="Uno.Core" Version="4.0.1" />
 		<PackageReference Include="Uno.WinUI" Version="4.4.13" />
