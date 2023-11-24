@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
-		<TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
-		<TargetPlatformMinVersion>10.0.18362.0</TargetPlatformMinVersion>
+		<TargetFramework>net7.0-windows10.0.19041.0</TargetFramework>
+		<TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
 		<RootNamespace>Nventive.Persistence.Sample</RootNamespace>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
 		<Platforms>x86;x64;arm64</Platforms>
@@ -33,8 +33,8 @@
 		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.1.3" />
 		<PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22000.196" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="5.0.0" />
-		<PackageReference Include="Reactive.Annex" Version="0.6.0-dev.50" />
-		<PackageReference Include="Reactive.Annex.Uno.WinUI" Version="0.6.0-dev.50" />
+		<PackageReference Include="Reactive.Annex" Version="2.0.0-feature.Uno5.2" />
+		<PackageReference Include="Reactive.Annex.Uno.WinUI" Version="2.0.0-feature.Uno5.2" />
 		<PackageReference Include="Uno.Core.Extensions.Logging.Singleton" Version="4.0.1" />
 
 		<Manifest Include="$(ApplicationManifest)" />

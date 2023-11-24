@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence.Reactive", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence.Tests", "src\Persistence.Tests\Persistence.Tests.csproj", "{F7D99039-6B1C-40E0-B591-65055948057C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence.Uno", "src\Persistence.Uno\Persistence.Uno.csproj", "{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence.Uno.WinUI", "src\Persistence.Uno.WinUI\Persistence.Uno.WinUI.csproj", "{937BE7B4-948E-466D-90BB-99693988CF9C}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Persistence.Shared", "src\Persistence.Shared\Persistence.Shared.shproj", "{EEE401FC-B4EB-469F-8FD5-745DFB7639BE}"
@@ -171,38 +169,6 @@ Global
 		{F7D99039-6B1C-40E0-B591-65055948057C}.Release|x64.Build.0 = Release|Any CPU
 		{F7D99039-6B1C-40E0-B591-65055948057C}.Release|x86.ActiveCfg = Release|Any CPU
 		{F7D99039-6B1C-40E0-B591-65055948057C}.Release|x86.Build.0 = Release|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Debug|Android.ActiveCfg = Debug|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Debug|Android.Build.0 = Debug|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Debug|arm64.ActiveCfg = Debug|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Debug|arm64.Build.0 = Debug|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Debug|iOS.ActiveCfg = Debug|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Debug|iOS.Build.0 = Debug|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Debug|NuGet.ActiveCfg = Debug|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Debug|NuGet.Build.0 = Debug|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Debug|UAP.ActiveCfg = Debug|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Debug|UAP.Build.0 = Debug|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Debug|x64.Build.0 = Debug|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Debug|x86.Build.0 = Debug|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Release|Android.ActiveCfg = Release|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Release|Android.Build.0 = Release|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Release|arm64.ActiveCfg = Release|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Release|arm64.Build.0 = Release|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Release|iOS.ActiveCfg = Release|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Release|iOS.Build.0 = Release|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Release|NuGet.ActiveCfg = Release|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Release|NuGet.Build.0 = Release|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Release|UAP.ActiveCfg = Release|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Release|UAP.Build.0 = Release|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Release|x64.ActiveCfg = Release|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Release|x64.Build.0 = Release|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Release|x86.ActiveCfg = Release|Any CPU
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B}.Release|x86.Build.0 = Release|Any CPU
 		{937BE7B4-948E-466D-90BB-99693988CF9C}.Debug|Android.ActiveCfg = Debug|Any CPU
 		{937BE7B4-948E-466D-90BB-99693988CF9C}.Debug|Android.Build.0 = Debug|Any CPU
 		{937BE7B4-948E-466D-90BB-99693988CF9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -325,7 +291,6 @@ Global
 		{E695E172-1EEA-4CFB-A723-600DC124929A} = {513F12B5-5297-41D0-85F3-B50ADCDA745C}
 		{BF716EF2-D8AC-43C4-A9EF-E6C2919DE298} = {513F12B5-5297-41D0-85F3-B50ADCDA745C}
 		{F7D99039-6B1C-40E0-B591-65055948057C} = {2DE96007-8B5B-4A90-B5CB-CC50534B1179}
-		{615679D0-D8D3-45FF-AAE4-DD3BB043E68B} = {513F12B5-5297-41D0-85F3-B50ADCDA745C}
 		{937BE7B4-948E-466D-90BB-99693988CF9C} = {513F12B5-5297-41D0-85F3-B50ADCDA745C}
 		{EEE401FC-B4EB-469F-8FD5-745DFB7639BE} = {513F12B5-5297-41D0-85F3-B50ADCDA745C}
 		{6279C845-92F8-4333-AB99-3D213163593C} = {CFE1395C-3176-4E42-99FF-C5869254FE52}
@@ -336,7 +301,6 @@ Global
 		SolutionGuid = {5BA7DD68-E008-4F53-8F51-83D42D3877B9}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		src\Persistence.Shared\Persistence.Shared.projitems*{615679d0-d8d3-45ff-aae4-dd3bb043e68b}*SharedItemsImports = 5
 		src\Nventive.Persistence.Sample\Nventive.Persistence.Sample.Shared\Nventive.Persistence.Sample.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
 		src\Nventive.Persistence.Sample\Nventive.Persistence.Sample.Shared\Nventive.Persistence.Sample.Shared.projitems*{7c9fd98f-3d02-47df-951b-d9bf46bfc261}*SharedItemsImports = 5
 		src\Persistence.Shared\Persistence.Shared.projitems*{937be7b4-948e-466d-90bb-99693988cf9c}*SharedItemsImports = 5
