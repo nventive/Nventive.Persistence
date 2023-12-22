@@ -1,6 +1,6 @@
 # Breaking Changes
 
-## 1.0.0
+## 0.5.0
 - Added support for .NET 7.
 - Updated Uno.WinUI to 5.0.19.
 - Updated Windows SDK version from 18362 to 19041.
