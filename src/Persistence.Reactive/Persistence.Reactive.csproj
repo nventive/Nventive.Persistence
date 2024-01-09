@@ -8,7 +8,7 @@
 		<PackageId>Nventive.Persistence.Reactive</PackageId>
 		<Description>Nventive.Persistence.Reactive</Description>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
-		<PackageTags>persistence;reactive;mvvm;uwp;winui;ios;android</PackageTags>
+		<PackageTags>persistence;reactive;mvvm;winui;ios;android</PackageTags>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/nventive/Nventive.Persistence</PackageProjectUrl>
 
