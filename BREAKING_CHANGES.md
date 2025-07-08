@@ -1,5 +1,10 @@
 # Breaking Changes
 
+## 0.6.0
+- Targets .NET 8.
+- Targets Uno 6.
+- Removed support for NetStandard2.0
+
 ## 0.5.0
 - Added support for .NET 7.
 - Updated Uno.WinUI to 5.0.19.
