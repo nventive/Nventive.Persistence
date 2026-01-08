@@ -1,5 +1,8 @@
 # Breaking Changes
 
+## 0.7.0
+- Targets .NET 10.
+
 ## 0.6.0
 - Targets .NET 8.
 - Targets Uno 6.
